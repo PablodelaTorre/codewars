@@ -1,0 +1,16 @@
+class Arge {
+    
+    public static int nbYear(int p0, double percent, int aug, int p) {
+        int count = 0;
+        double per = percent/100;
+        double augd = aug;
+        double pd = p;
+        double p2 = p0;
+        do {
+          p2=(p2+(p2*per)+augd);
+              count=count + 1;
+          p2 = (int)p2;
+        } while(p2<pd);
+      return count;
+    }
+}
